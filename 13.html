@@ -1,0 +1,70 @@
+<script>
+  function penjumlahan(a, b) {
+    return a + b;
+  }
+
+  function pengurangan(a, b) {
+    return a - b;
+  }
+
+  function pembagian(a, b) {
+    return a / b;
+  }
+
+  function perkalian(a, b) {
+    return a * b;
+  }
+
+  function pangkat(a, b) {
+    return a ** b;
+  }
+
+  function akarPangkat2(a) {
+    return a ** 0.5;
+  }
+
+  function akarPangkat3(a) {
+    return a ** (1 / 3);
+  }
+
+  const menu = prompt(
+    'Pilih Menu: \n1. Penjumlahan \n2. Pengurangan \n3. Pembagian \n4. Perkalian \n5. Pangkat \n6. Akar Pangkat 2 \n7. Akar Pangkat 3'
+  );
+
+  if (menu == 1) {
+    let a = parseFloat(prompt('Masukkan angka pertama'));
+    let b = parseFloat(prompt('Masukkan angka kedua'));
+    let hasil = penjumlahan(a, b);
+    alert('Hasil penjumlahan ' + a + ' + ' + b + ' = ' + hasil);
+  } else if (menu == 2) {
+    let a = parseFloat(prompt('Masukkan angka pertama'));
+    let b = parseFloat(prompt('Masukkan angka kedua'));
+    let hasil = pengurangan(a, b);
+    alert('Hasil pengurangan ' + a + ' - ' + b + ' = ' + hasil);
+  } else if (menu == 3) {
+    let a = parseFloat(prompt('Masukkan angka pertama'));
+    let b = parseFloat(prompt('Masukkan angka kedua'));
+    let hasil = pembagian(a, b);
+    alert('Hasil pembagian ' + a + ' / ' + b + ' = ' + hasil);
+  } else if (menu == 4) {
+    let a = parseFloat(prompt('Masukkan angka pertama'));
+    let b = parseFloat(prompt('Masukkan angka kedua'));
+    let hasil = perkalian(a, b);
+    alert('Hasil perkalian ' + a + ' * ' + b + ' = ' + hasil);
+  } else if (menu == 5) {
+    let a = parseFloat(prompt('Masukkan angka pertama'));
+    let b = parseFloat(prompt('Masukkan angka kedua'));
+    let hasil = pangkat(a, b);
+    alert('Hasil pangkat ' + a + ' ** ' + b + ' = ' + hasil);
+  } else if (menu == 6) {
+    let a = parseFloat(prompt('Masukkan angka'));
+    let hasil = akarPangkat2(a);
+    alert('Hasil akar pangkat 2 ' + a + ' = ' + hasil);
+  } else if (menu == 7) {
+    let a = parseFloat(prompt('Masukkan angka'));
+    let hasil = akarPangkat3(a);
+    alert('Hasil akar pangkat 3 ' + a + ' = ' + hasil);
+  } else {
+    alert('Menu tidak tersedia');
+  }
+</script>
